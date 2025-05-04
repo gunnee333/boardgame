@@ -1,0 +1,109 @@
+body,
+.root {
+  overflow: hidden;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  height: 100svh;
+}
+
+.wrap .searchContainer {
+  display: flex;
+  gap: 60px 30px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 8px;
+}
+
+.wrap .searchContainer .radioContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 3px;
+}
+
+.wrap .searchContainer .radioContainer .radioBox {
+  border: 1px solid #cecece;
+  font-size: 12px;
+  width: 60px;
+  height: 24px;
+  margin: 0px 5px 0px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap .searchContainer .radioContainer .radioBox.checked {
+  border-color: #428503;
+  color: #428503;
+  font-weight: 700;
+}
+
+.wrap .listContainer {
+  display: flex;
+  gap: 60px 30px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: auto;
+  padding: 24px 8px;
+}
+
+.wrap .listContainer .item {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: 36px;
+}
+
+.wrap .listContainer .item .imgContainer {
+  width: 25vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .wrap .listContainer .item .imgContainer {
+    width: 40vw;
+  }
+}
+
+.wrap .listContainer .item .imgContainer img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.wrap .listContainer .item .textContainer {
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 16px;
+  padding-top: 8px;
+}
+
+.wrap .listContainer .item .textContainer h3 {
+  margin: 0;
+}
+
+.wrap .listContainer .item .textContainer .textRow {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.wrap .listContainer .item .textContainer .textRow h4,
+.wrap .listContainer .item .textContainer .textRow ul {
+  margin: 0;
+}
+
+.wrap .listContainer .item .textContainer .textRow ul li {
+  list-style-type: none;
+}
