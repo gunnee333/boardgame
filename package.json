@@ -2,7 +2,7 @@
   "name": "boardgame",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gunnee333.github.io/boardgame",
+  "homepage": "https://gunnee333.github.io/boardgame/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
