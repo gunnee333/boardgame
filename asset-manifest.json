@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/boardgame/static/css/main.156ec8e1.css",
-    "main.js": "/boardgame/static/js/main.6f95f028.js",
+    "main.css": "/boardgame/static/css/main.f1cacc0e.css",
+    "main.js": "/boardgame/static/js/main.5ecb12e8.js",
     "static/js/453.77f57d60.chunk.js": "/boardgame/static/js/453.77f57d60.chunk.js",
     "static/media/쿼리도.png": "/boardgame/static/media/쿼리도.f090be1e336e4133aa4c.png",
     "static/media/장난꾸러기나방.png": "/boardgame/static/media/장난꾸러기나방.75a79ae786d2bda2b9a5.png",
@@ -57,12 +57,13 @@
     "static/media/세트.png": "/boardgame/static/media/세트.a0efe41c46cd9e4c5996.png",
     "static/media/해저탐험.png": "/boardgame/static/media/해저탐험.2766cdfacb2834e48f90.png",
     "index.html": "/boardgame/index.html",
-    "main.156ec8e1.css.map": "/boardgame/static/css/main.156ec8e1.css.map",
-    "main.6f95f028.js.map": "/boardgame/static/js/main.6f95f028.js.map",
+    "static/media/arrow.svg": "/boardgame/static/media/arrow.a874df8fe389304f1a181e1636630436.svg",
+    "main.f1cacc0e.css.map": "/boardgame/static/css/main.f1cacc0e.css.map",
+    "main.5ecb12e8.js.map": "/boardgame/static/js/main.5ecb12e8.js.map",
     "453.77f57d60.chunk.js.map": "/boardgame/static/js/453.77f57d60.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.156ec8e1.css",
-    "static/js/main.6f95f028.js"
+    "static/css/main.f1cacc0e.css",
+    "static/js/main.5ecb12e8.js"
   ]
 }
