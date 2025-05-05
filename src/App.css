@@ -6,7 +6,7 @@ body,
 .wrap {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 12px;
   height: 100svh;
 }
 
