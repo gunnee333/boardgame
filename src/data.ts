@@ -480,8 +480,6 @@ class Data {
         });
         if (!genreFiltered) {
           isFiltered = false;
-        } else {
-          console.log(item.name, item.genre, genre, genreFiltered);
         }
       }
 
