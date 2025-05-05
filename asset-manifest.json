@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/boardgame/static/css/main.c7556c51.css",
-    "main.js": "/boardgame/static/js/main.ca17e95e.js",
+    "main.js": "/boardgame/static/js/main.84011c6a.js",
     "static/js/453.77f57d60.chunk.js": "/boardgame/static/js/453.77f57d60.chunk.js",
     "static/media/머핀타임.jpeg": "/boardgame/static/media/머핀타임.c66105fabbdf6ecb77a7.jpeg",
     "static/media/요트다이스.jpg": "/boardgame/static/media/요트다이스.4afac0b35a57a1968241.jpg",
@@ -63,11 +63,11 @@
     "index.html": "/boardgame/index.html",
     "static/media/arrow.svg": "/boardgame/static/media/arrow.a874df8fe389304f1a181e1636630436.svg",
     "main.c7556c51.css.map": "/boardgame/static/css/main.c7556c51.css.map",
-    "main.ca17e95e.js.map": "/boardgame/static/js/main.ca17e95e.js.map",
+    "main.84011c6a.js.map": "/boardgame/static/js/main.84011c6a.js.map",
     "453.77f57d60.chunk.js.map": "/boardgame/static/js/453.77f57d60.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7556c51.css",
-    "static/js/main.ca17e95e.js"
+    "static/js/main.84011c6a.js"
   ]
 }
