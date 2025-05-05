@@ -447,6 +447,47 @@ const initData: IBoardGame[] = [
     genre: ['전략', '패밀리'],
     isBuy: false,
   },
+  {
+    name: '머핀타임',
+    img: Images.머핀타임,
+    player: [2, 6],
+    playTime: [20, 40],
+    genre: ['파티', '블러핑', '카드'],
+    isBuy: false,
+  },
+  {
+    name: '펭귄파티',
+    img: Images.펭귄파티,
+    player: [2, 6],
+    playTime: [30],
+    plus: ['도시와 기사', '항해사', '탐험과와 해적', '상인과 야만인'],
+    genre: ['패밀리', '카드'],
+    isBuy: false,
+  },
+  {
+    name: '독수리눈치싸움',
+    img: Images.독수리눈치싸움,
+    player: [2, 5],
+    playTime: [20],
+    genre: ['지능개발', '패밀리'],
+    isBuy: false,
+  },
+  {
+    name: '몰타의 관문',
+    img: Images.몰타의관문,
+    player: [2, 5],
+    playTime: [45],
+    genre: ['전략', '추상'],
+    isBuy: false,
+  },
+  {
+    name: '아줄',
+    img: Images.아줄,
+    player: [2, 4],
+    playTime: [30, 45],
+    genre: ['전략', '추상'],
+    isBuy: false,
+  },
 ];
 
 class Data {
