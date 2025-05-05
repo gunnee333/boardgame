@@ -12,9 +12,9 @@ body,
 
 .wrap .searchContainer {
   display: flex;
-  gap: 60px 30px;
+  flex-direction: column;
+  gap: 24px 30px;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-around;
   padding: 8px;
 }
@@ -39,8 +39,9 @@ body,
 }
 
 .wrap .searchContainer .radioContainer .radioBox.checked {
-  border-color: #428503;
-  color: #428503;
+  border-color: #7bff00;
+  background-color: #7bff00;
+  color: black;
   font-weight: 700;
 }
 
@@ -99,9 +100,14 @@ body,
   font-size: 14px;
 }
 
+.wrap .listContainer .item .textContainer .textRow h4 {
+  min-width: 50px;
+}
+
 .wrap .listContainer .item .textContainer .textRow h4,
 .wrap .listContainer .item .textContainer .textRow ul {
   margin: 0;
+  padding: 0;
 }
 
 .wrap .listContainer .item .textContainer .textRow ul li {

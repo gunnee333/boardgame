@@ -9,15 +9,22 @@ export interface IBoardGame {
   plus?: string[];
   isBuy?: boolean;
   order?: number;
+  genre?: string[];
 }
 
-export const data: IBoardGame[] = [
+export interface IFilter {
+  player?: number;
+  genre?: string[];
+}
+
+const initData: IBoardGame[] = [
   {
     name: '모노폴리',
     img: Images.모노폴리,
     player: [2, 6],
     playTime: [60, 180],
     plus: ['k-확장판'],
+    genre: ['패밀리', '전략'],
     isBuy: true,
   },
   {
@@ -25,6 +32,7 @@ export const data: IBoardGame[] = [
     img: Images.클루,
     player: [2, 6],
     playTime: [45],
+    genre: ['추리/방탈출'],
     isBuy: true,
   },
   {
@@ -32,6 +40,7 @@ export const data: IBoardGame[] = [
     img: Images.루미큐브,
     player: [2, 4],
     playTime: [20],
+    genre: ['추상', '패밀리'],
     isBuy: true,
   },
   {
@@ -40,6 +49,7 @@ export const data: IBoardGame[] = [
     player: [2, 6],
     playTime: [30],
     plus: ['찬란한도시'],
+    genre: ['전략', '카드'],
     isBuy: true,
   },
   {
@@ -48,6 +58,7 @@ export const data: IBoardGame[] = [
     player: [1, 5],
     playTime: [90, 120],
     plus: ['서곡', '비너스넥스트', '개척기지', '헬라스&엘리시움', '격동'],
+    genre: ['전략'],
     isBuy: true,
   },
   {
@@ -55,6 +66,7 @@ export const data: IBoardGame[] = [
     img: Images.쿼리도,
     player: [2, 4],
     playTime: [15],
+    genre: ['추상'],
     isBuy: true,
   },
   {
@@ -62,6 +74,7 @@ export const data: IBoardGame[] = [
     img: Images.장난꾸러기나방,
     player: [3, 5],
     playTime: [15, 30],
+    genre: ['손재주', '패밀리'],
     isBuy: true,
   },
   {
@@ -69,6 +82,7 @@ export const data: IBoardGame[] = [
     img: Images.바퀴벌레포커,
     player: [2, 6],
     playTime: [20],
+    genre: ['블러핑', '패밀리'],
     isBuy: true,
   },
   {
@@ -76,6 +90,7 @@ export const data: IBoardGame[] = [
     img: Images.다빈치코드,
     player: [2, 4],
     playTime: [15],
+    genre: ['추리/방탈출'],
     isBuy: true,
   },
   {
@@ -83,6 +98,7 @@ export const data: IBoardGame[] = [
     img: Images.다빈치캐슬,
     player: [3, 6],
     playTime: [15],
+    genre: ['추리/방탈출'],
     isBuy: true,
   },
   {
@@ -90,6 +106,7 @@ export const data: IBoardGame[] = [
     img: Images.타르기,
     player: [2],
     playTime: [60],
+    genre: ['전략'],
     isBuy: true,
   },
   {
@@ -98,6 +115,7 @@ export const data: IBoardGame[] = [
     player: [4, 7],
     playTime: [20, 40],
     plus: ['확장판모음', '닷지시티', '골드러시'],
+    genre: ['블러핑', '카드'],
     isBuy: true,
   },
   {
@@ -105,6 +123,7 @@ export const data: IBoardGame[] = [
     img: Images.퍼레이드,
     player: [2, 6],
     playTime: [45],
+    genre: ['카드', '전략'],
     isBuy: true,
   },
   {
@@ -112,6 +131,7 @@ export const data: IBoardGame[] = [
     img: Images.컬러레또,
     player: [2, 5],
     playTime: [30],
+    genre: ['카드', '패밀리'],
     isBuy: true,
   },
   {
@@ -119,6 +139,7 @@ export const data: IBoardGame[] = [
     img: Images.세트,
     player: [1, undefined],
     playTime: [20],
+    genre: ['추상', '지능개발'],
     isBuy: true,
   },
   {
@@ -126,6 +147,7 @@ export const data: IBoardGame[] = [
     img: Images.사보타지,
     player: [3, 10],
     playTime: [30],
+    genre: ['협력', '전략'],
     isBuy: true,
   },
   {
@@ -133,6 +155,7 @@ export const data: IBoardGame[] = [
     img: Images.위자드,
     player: [3, 6],
     playTime: [45],
+    genre: ['트릭테이킹', '카드'],
     isBuy: true,
   },
   {
@@ -140,6 +163,7 @@ export const data: IBoardGame[] = [
     img: Images.달무티,
     player: [4, 8],
     playTime: [15],
+    genre: ['트릭테이킹', '카드'],
     isBuy: true,
   },
   {
@@ -147,6 +171,7 @@ export const data: IBoardGame[] = [
     img: Images.보난자,
     player: [3, 5],
     playTime: [45],
+    genre: ['카드', '전략'],
     isBuy: true,
   },
   {
@@ -154,6 +179,7 @@ export const data: IBoardGame[] = [
     img: Images.로보77,
     player: [2, 8],
     playTime: [30],
+    genre: ['카드', '패밀리'],
     isBuy: true,
   },
   {
@@ -161,6 +187,7 @@ export const data: IBoardGame[] = [
     img: Images.젝스님트,
     player: [2, 10],
     playTime: [20],
+    genre: ['카드', '패밀리'],
     isBuy: true,
   },
   {
@@ -168,6 +195,7 @@ export const data: IBoardGame[] = [
     img: Images.참새작,
     player: [2, 5],
     playTime: [30],
+    genre: ['카드', '패밀리'],
     isBuy: true,
   },
   {
@@ -175,6 +203,7 @@ export const data: IBoardGame[] = [
     img: Images.다이스베이스볼,
     player: [2],
     playTime: [20],
+    genre: ['주사위', '패밀리'],
     isBuy: true,
   },
   {
@@ -182,14 +211,23 @@ export const data: IBoardGame[] = [
     img: Images.카보,
     player: [2, 4],
     playTime: [45],
+    genre: ['카드', '메모리'],
     isBuy: true,
   },
-  { name: '쿠', img: Images.쿠, player: [2, 6], playTime: [15], isBuy: true },
+  {
+    name: '쿠',
+    img: Images.쿠,
+    player: [2, 6],
+    playTime: [15],
+    genre: ['블러핑', '카드'],
+    isBuy: true,
+  },
   {
     name: '해저탐험',
     img: Images.해저탐험,
     player: [2, 6],
     playTime: [30],
+    genre: ['협력', '전략'],
     isBuy: true,
   },
   {
@@ -197,6 +235,7 @@ export const data: IBoardGame[] = [
     img: Images.타코햇케익기프트피자,
     player: [2, 8],
     playTime: [15],
+    genre: ['파티', '손재주'],
     isBuy: true,
   },
   {
@@ -204,6 +243,7 @@ export const data: IBoardGame[] = [
     img: Images.엘리베이터앞에서,
     player: [2, 4],
     playTime: [20],
+    genre: ['전략', '패밀리'],
     isBuy: true,
   },
   {
@@ -211,6 +251,7 @@ export const data: IBoardGame[] = [
     img: Images.페이퍼사파리,
     player: [2, 5],
     playTime: [20],
+    genre: ['카드', '패밀리'],
     isBuy: true,
   },
   {
@@ -218,6 +259,7 @@ export const data: IBoardGame[] = [
     img: Images.해독제,
     player: [2, 7],
     playTime: [20, 30],
+    genre: ['협력', '추리/방탈출'],
     isBuy: true,
   },
   {
@@ -225,6 +267,7 @@ export const data: IBoardGame[] = [
     img: Images.캘리코,
     player: [1, 4],
     playTime: [30, 45],
+    genre: ['전략', '패밀리'],
     isBuy: true,
   },
   {
@@ -232,6 +275,7 @@ export const data: IBoardGame[] = [
     img: Images.티켓투라이드_미국,
     player: [2, 5],
     playTime: [30, 60],
+    genre: ['전략', '패밀리'],
     isBuy: true,
   },
   {
@@ -239,6 +283,7 @@ export const data: IBoardGame[] = [
     img: Images.티켓투라이드_유럽,
     player: [2, 5],
     playTime: [40, 60],
+    genre: ['전략', '패밀리'],
     isBuy: true,
   },
   {
@@ -246,6 +291,7 @@ export const data: IBoardGame[] = [
     img: Images.초밥왕,
     player: [2, 5],
     playTime: [10, 15],
+    genre: ['카드', '패밀리'],
     isBuy: true,
   },
   {
@@ -253,6 +299,7 @@ export const data: IBoardGame[] = [
     img: Images.러브레터,
     player: [2, 4],
     playTime: [30],
+    genre: ['블러핑', '카드'],
     isBuy: true,
   },
   {
@@ -260,6 +307,7 @@ export const data: IBoardGame[] = [
     img: Images.도망자,
     player: [2],
     playTime: [20],
+    genre: ['추리/방탈출', '카드'],
     isBuy: true,
   },
   {
@@ -267,6 +315,7 @@ export const data: IBoardGame[] = [
     img: Images.번레이트,
     player: [2, 4],
     playTime: [30],
+    genre: ['전략', '카드'],
     isBuy: true,
   },
   {
@@ -274,6 +323,7 @@ export const data: IBoardGame[] = [
     img: Images.라스베가스,
     player: [2, 5],
     playTime: [30],
+    genre: ['주사위', '패밀리'],
     isBuy: true,
   },
   {
@@ -281,6 +331,7 @@ export const data: IBoardGame[] = [
     img: Images.렉시오,
     player: [3, 5],
     playTime: [20],
+    genre: ['카드', '전략'],
     isBuy: true,
   },
   {
@@ -288,6 +339,7 @@ export const data: IBoardGame[] = [
     img: Images.노땡스,
     player: [3, 7],
     playTime: [20],
+    genre: ['카드', '전략'],
     isBuy: true,
   },
   {
@@ -295,6 +347,7 @@ export const data: IBoardGame[] = [
     img: Images.라마,
     player: [2, 6],
     playTime: [20],
+    genre: ['카드', '패밀리'],
     isBuy: true,
   },
   {
@@ -302,6 +355,7 @@ export const data: IBoardGame[] = [
     img: Images.달콤보,
     player: [2, 4],
     playTime: [20],
+    genre: ['카드', '패밀리'],
     isBuy: true,
   },
   {
@@ -309,6 +363,7 @@ export const data: IBoardGame[] = [
     img: Images.별빛커피,
     player: [2, 4],
     playTime: [40],
+    genre: ['전략', '패밀리'],
     isBuy: true,
   },
   {
@@ -317,6 +372,7 @@ export const data: IBoardGame[] = [
     player: [2, 4],
     playTime: [20],
     plus: ['그랜드마스터(~6인)'],
+    genre: ['손재주', '파티'],
     isBuy: true,
   },
   {
@@ -324,6 +380,7 @@ export const data: IBoardGame[] = [
     img: Images.센추리,
     player: [2, 5],
     playTime: [30, 45],
+    genre: ['전략', '카드'],
     isBuy: true,
   },
   {
@@ -331,6 +388,7 @@ export const data: IBoardGame[] = [
     img: Images.달빛아래에서수를,
     player: [2],
     playTime: [20],
+    genre: ['전략', '추상'],
     isBuy: true,
   },
   {
@@ -338,6 +396,7 @@ export const data: IBoardGame[] = [
     img: Images.스파이폴2,
     player: [3, 12],
     playTime: [15],
+    genre: ['블러핑', '추리/방탈출'],
     isBuy: true,
   },
   {
@@ -345,14 +404,23 @@ export const data: IBoardGame[] = [
     img: Images.요트다이스,
     player: [1, undefined],
     playTime: [30],
+    genre: ['주사위', '패밀리'],
     isBuy: true,
   },
-  { name: '티츄', img: Images.티츄, player: [4], playTime: [60], isBuy: false },
+  {
+    name: '티츄',
+    img: Images.티츄,
+    player: [4],
+    playTime: [60],
+    genre: ['트릭테이킹', '카드'],
+    isBuy: false,
+  },
   {
     name: '마법사의레시피',
     img: Images.마법사의레시피,
     player: [2, 4],
     playTime: [30],
+    genre: ['전략', '패밀리'],
     isBuy: false,
   },
   {
@@ -360,6 +428,7 @@ export const data: IBoardGame[] = [
     img: Images.크라스카리어트,
     player: [3, 5],
     playTime: [30],
+    genre: ['전략', '카드'],
     isBuy: false,
   },
   {
@@ -367,6 +436,7 @@ export const data: IBoardGame[] = [
     img: Images.서펜티나,
     player: [2, 4],
     playTime: [15],
+    genre: ['패밀리', '추상'],
     isBuy: false,
   },
   {
@@ -374,6 +444,128 @@ export const data: IBoardGame[] = [
     img: Images.카탄,
     player: [3, 4],
     playTime: [75],
+    genre: ['전략', '패밀리'],
     isBuy: false,
   },
 ];
+
+class Data {
+  private data: IBoardGame[] = [];
+
+  constructor() {
+    this.data = initData;
+  }
+
+  getList({ player, genre }: IFilter) {
+    const newList = this.data.filter((item) => {
+      let isFiltered = true;
+      if (!item.isBuy) {
+        isFiltered = false;
+      }
+
+      if (typeof player === 'number') {
+        const playerFiltered = this.filterPlayerNumber({
+          filterNumber: player,
+          player: item.player,
+        });
+        if (!playerFiltered) {
+          isFiltered = false;
+        }
+      }
+
+      if ((genre || []).length > 0) {
+        const genreFiltered = this.filterGenre({
+          genre: item.genre,
+          filterGenre: genre,
+        });
+        if (!genreFiltered) {
+          isFiltered = false;
+        } else {
+          console.log(item.name, item.genre, genre, genreFiltered);
+        }
+      }
+
+      return isFiltered;
+    });
+    return newList;
+  }
+
+  getMaxPlayer() {
+    const maxPlayer = this.data.reduce((acc, cur) => {
+      const player1 = (cur.player || [])[0];
+      const player2 = (cur.player || [])[1];
+
+      if (typeof player1 === 'number' && acc < player1) {
+        acc = player1;
+      }
+      if (typeof player2 === 'number' && acc < player2) {
+        acc = player2;
+      }
+      return acc;
+    }, 0);
+    return maxPlayer;
+  }
+
+  getGenreList() {
+    const genreList = this.data.reduce((acc, cur) => {
+      (cur.genre || []).forEach((_genre) => {
+        if (!acc.includes(_genre)) {
+          acc.push(_genre);
+        }
+      });
+      return acc;
+    }, [] as string[]);
+    return genreList;
+  }
+
+  private filterPlayerNumber({
+    filterNumber,
+    player,
+  }: {
+    filterNumber?: number;
+    player?: [number] | [number, number] | [number, undefined] | undefined;
+  }) {
+    if (typeof filterNumber === 'undefined') {
+      return true;
+    }
+    if (typeof player === 'undefined') {
+      return false;
+    }
+    if (player.length === 1) {
+      return filterNumber === player[0];
+    } else if (player.length === 2) {
+      if (typeof player[1] === 'number') {
+        return filterNumber >= player[0] && filterNumber <= player[1];
+      } else {
+        return filterNumber >= player[0];
+      }
+    }
+    return false;
+  }
+
+  private filterGenre({
+    genre,
+    filterGenre,
+  }: {
+    genre?: string[];
+    filterGenre?: string[];
+  }) {
+    if (typeof filterGenre === 'undefined' || filterGenre.length === 0) {
+      return true;
+    }
+    if (typeof genre === 'undefined' || genre.length === 0) {
+      return false;
+    }
+    const isFilter =
+      genre.filter((_genre) => {
+        if (filterGenre.includes(_genre)) {
+          return true;
+        }
+        return false;
+      }).length === filterGenre.length;
+
+    return isFilter;
+  }
+}
+
+export default Data;

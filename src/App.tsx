@@ -1,39 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import _ from 'lodash';
 import './App.css';
-import { data, IBoardGame } from './data';
+import Data, { IBoardGame, IFilter } from './data';
 
-const buyData = data.filter((item) => item.isBuy);
-const maxPlayer = data.reduce((acc, cur) => {
-  const player1 = (cur.player || [])[0];
-  const player2 = (cur.player || [])[1];
-
-  if (typeof player1 === 'number' && acc < player1) {
-    acc = player1;
-  }
-  if (typeof player2 === 'number' && acc < player2) {
-    acc = player2;
-  }
-  return acc;
-}, 0);
+const boardGameList = new Data();
+const maxPlayer = boardGameList.getMaxPlayer();
+const genreList = boardGameList.getGenreList();
 
 function App() {
-  const [listData, setListData] = useState<IBoardGame[]>(buyData);
-  const [filter, setFilter] = useState<{ player?: number }>({});
+  const [listData, setListData] = useState<IBoardGame[]>(
+    boardGameList.getList({}),
+  );
+  const [filter, setFilter] = useState<IFilter>({});
 
   useEffect(() => {
-    const newListData = buyData.filter((item) => {
-      let isFiltered = true;
-      if (typeof filter.player === 'number') {
-        isFiltered = filterPlayerNumber({
-          filterNumber: filter.player,
-          player: item.player,
-        });
-      }
-
-      return isFiltered;
-    });
-    console.log(filter, newListData);
+    const newListData = boardGameList.getList(filter);
     setListData(newListData);
   }, [filter]);
 
@@ -60,6 +41,36 @@ function App() {
             );
           })}
         </div>
+        <div className="radioContainer">
+          {genreList.map((genre, index) => {
+            const isChecked = !!(filter.genre || []).find(
+              (selected) => selected === genre,
+            );
+            return (
+              <div
+                key={index}
+                className={['radioBox', isChecked ? 'checked' : ''].join(' ')}
+                onClick={() => {
+                  if (!isChecked) {
+                    setFilter({
+                      ...filter,
+                      genre: [...(filter.genre || []), genre],
+                    });
+                  } else {
+                    setFilter({
+                      ...filter,
+                      genre: (filter.genre || []).filter((selected) =>
+                        selected === genre ? false : true,
+                      ),
+                    });
+                  }
+                }}
+              >
+                {genre}
+              </div>
+            );
+          })}
+        </div>
       </div>
       <div className="listContainer">
         {listData.map((item) => {
@@ -78,6 +89,12 @@ function App() {
                     {formatPlayText({ array: item.playTime, tailText: '분' })}
                   </span>
                 </div>
+                {(item.genre || []).length > 0 && (
+                  <div className="textRow">
+                    <h4>장르</h4>
+                    <div>{(item.genre || []).join(', ')}</div>
+                  </div>
+                )}
                 {(item.plus || []).length > 0 && (
                   <div className="textRow">
                     <h4>확장판</h4>
@@ -116,28 +133,6 @@ function formatPlayText({
       return `${array[0]}${tailText} 이상`;
     }
   }
-}
-
-function filterPlayerNumber({
-  filterNumber,
-  player,
-}: {
-  filterNumber: number;
-  player: [number] | [number, number] | [number, undefined] | undefined;
-}) {
-  if (typeof player === 'undefined') {
-    return false;
-  }
-  if (player.length === 1) {
-    return filterNumber === player[0];
-  } else if (player.length === 2) {
-    if (typeof player[1] === 'number') {
-      return filterNumber >= player[0] && filterNumber <= player[1];
-    } else {
-      return filterNumber >= player[0];
-    }
-  }
-  return false;
 }
 
 export default App;
