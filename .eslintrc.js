@@ -24,6 +24,7 @@ module.exports = {
         allowTaggedTemplates: true,
       },
     ],
+    '@typescript-eslint/no-explicit-any': 'off',
   },
   settings: {
     react: {

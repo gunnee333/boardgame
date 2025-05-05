@@ -1,18 +1,22 @@
 import React, { useEffect, useRef, useState } from 'react';
 import _ from 'lodash';
 import './App.css';
-import Data, { IBoardGame, IFilter } from './data';
+import Data from './data';
 import { Svgs } from './assets';
+import { IBoardGame, IFilter } from './data/type';
+import { useNav } from './hook';
 
 const boardGameList = new Data();
 const maxPlayer = boardGameList.getMaxPlayer();
 const genreList = boardGameList.getGenreList();
 
 function App() {
-  const [listData, setListData] = useState<IBoardGame[]>(
-    boardGameList.getList({}),
-  );
-  const [filter, setFilter] = useState<IFilter>({});
+  const { getParams } = useNav();
+  const { n = '' } = getParams<{ n: string }>();
+  const [listData, setListData] = useState<IBoardGame[]>([]);
+  const [filter, setFilter] = useState<IFilter>({
+    isNotBuy: n.toLocaleUpperCase() === 'T',
+  });
   const [filterToggle, setFilterToggle] = useState<{
     player?: boolean;
     genre?: boolean;
