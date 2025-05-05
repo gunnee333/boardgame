@@ -31,6 +31,10 @@ body,
 }
 
 @media (max-width: 768px) {
+  .wrap {
+    gap: 4px;
+  }
+
   .wrap .searchContainer {
     gap: 4px 30px;
   }
@@ -61,7 +65,6 @@ body,
   }
   .wrap .searchContainer .searchItem .radioContainer {
     transition: all 0.5s ease;
-    justify-content: space-between;
   }
   .wrap .searchContainer .searchItem.on .radioContainer {
     max-height: 30svh;
@@ -156,7 +159,7 @@ body,
   font-size: 14px;
 }
 
-.wrap .listContainer .item .textContainer .textRow h4 {
+.wrap .listContainer .item .textContainer .textRow :first-child {
   min-width: 50px;
 }
 

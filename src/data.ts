@@ -369,7 +369,7 @@ const initData: IBoardGame[] = [
   {
     name: '꼬치의달인',
     img: Images.꼬치의달인,
-    player: [2, 4],
+    player: [2, 6],
     playTime: [20],
     plus: ['그랜드마스터(~6인)'],
     genre: ['손재주', '파티'],
