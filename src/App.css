@@ -19,7 +19,63 @@ body,
   padding: 8px;
 }
 
-.wrap .searchContainer .radioContainer {
+.wrap .searchContainer .searchItem {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.wrap .searchContainer .searchItem .searchTitle .icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .wrap .searchContainer {
+    gap: 4px 30px;
+  }
+  .wrap .searchContainer .searchItem {
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+  }
+  .wrap .searchContainer .searchItem .searchTitle {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .wrap .searchContainer .searchItem .searchTitle .icon {
+    display: block;
+    transition: transform 0.2s ease;
+  }
+  .wrap .searchContainer .searchItem .searchTitle .icon img {
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+  .wrap .searchContainer .searchItem.on .searchTitle .icon {
+    transform: rotate(180deg);
+  }
+  .wrap .searchContainer .searchItem .radioContainer {
+    transition: all 0.5s ease;
+    justify-content: space-between;
+  }
+  .wrap .searchContainer .searchItem.on .radioContainer {
+    max-height: 30svh;
+  }
+  .wrap .searchContainer .searchItem.off .radioContainer {
+    overflow: hidden;
+    max-height: 0;
+  }
+}
+
+.wrap .searchContainer .searchItem .searchTitle {
+}
+
+.wrap .searchContainer .searchItem .radioContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -27,7 +83,7 @@ body,
   gap: 3px;
 }
 
-.wrap .searchContainer .radioContainer .radioBox {
+.wrap .searchContainer .searchItem .radioContainer .radioBox {
   border: 1px solid #cecece;
   font-size: 12px;
   width: 60px;
@@ -38,7 +94,7 @@ body,
   justify-content: center;
 }
 
-.wrap .searchContainer .radioContainer .radioBox.checked {
+.wrap .searchContainer .searchItem .radioContainer .radioBox.checked {
   border-color: #7bff00;
   background-color: #7bff00;
   color: black;

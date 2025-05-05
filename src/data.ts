@@ -32,7 +32,7 @@ const initData: IBoardGame[] = [
     img: Images.클루,
     player: [2, 6],
     playTime: [45],
-    genre: ['추리/방탈출'],
+    genre: ['추리'],
     isBuy: true,
   },
   {
@@ -90,7 +90,7 @@ const initData: IBoardGame[] = [
     img: Images.다빈치코드,
     player: [2, 4],
     playTime: [15],
-    genre: ['추리/방탈출'],
+    genre: ['추리'],
     isBuy: true,
   },
   {
@@ -98,7 +98,7 @@ const initData: IBoardGame[] = [
     img: Images.다빈치캐슬,
     player: [3, 6],
     playTime: [15],
-    genre: ['추리/방탈출'],
+    genre: ['추리'],
     isBuy: true,
   },
   {
@@ -259,7 +259,7 @@ const initData: IBoardGame[] = [
     img: Images.해독제,
     player: [2, 7],
     playTime: [20, 30],
-    genre: ['협력', '추리/방탈출'],
+    genre: ['협력', '추리'],
     isBuy: true,
   },
   {
@@ -307,7 +307,7 @@ const initData: IBoardGame[] = [
     img: Images.도망자,
     player: [2],
     playTime: [20],
-    genre: ['추리/방탈출', '카드'],
+    genre: ['추리', '카드'],
     isBuy: true,
   },
   {
@@ -396,7 +396,7 @@ const initData: IBoardGame[] = [
     img: Images.스파이폴2,
     player: [3, 12],
     playTime: [15],
-    genre: ['블러핑', '추리/방탈출'],
+    genre: ['블러핑', '추리'],
     isBuy: true,
   },
   {
