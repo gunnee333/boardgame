@@ -8,12 +8,12 @@ class Data {
     this.data = initData;
   }
 
-  getList({ player, genre, isNotBuy = false }: IFilter) {
+  getList({ player, genre, n }: IFilter) {
     const newList = this.data.filter((item) => {
       let isFiltered = true;
-      if (isNotBuy && item.isBuy) {
+      if ([undefined, null, 'n'].includes(n) && item.isBuy) {
         isFiltered = false;
-      } else if (!isNotBuy && !item.isBuy) {
+      } else if (n === 't' && !item.isBuy) {
         isFiltered = false;
       }
 

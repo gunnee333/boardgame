@@ -12,11 +12,9 @@ const genreList = boardGameList.getGenreList();
 
 function App() {
   const { getParams } = useNav();
-  const { n = '' } = getParams<{ n: string }>();
+  const { n } = getParams<{ n: string }>();
   const [listData, setListData] = useState<IBoardGame[]>([]);
-  const [filter, setFilter] = useState<IFilter>({
-    isNotBuy: n.toLocaleUpperCase() === 'T',
-  });
+  const [filter, setFilter] = useState<IFilter>({ n });
   const [filterToggle, setFilterToggle] = useState<{
     player?: boolean;
     genre?: boolean;

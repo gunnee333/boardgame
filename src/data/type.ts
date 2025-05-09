@@ -12,5 +12,5 @@ export interface IBoardGame {
 export interface IFilter {
   player?: number;
   genre?: string[];
-  isNotBuy?: boolean;
+  n?: string;
 }
