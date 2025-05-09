@@ -56,3 +56,7 @@ export { default as 독수리눈치싸움 } from './독수리눈치싸움.jpeg';
 export { default as 몰타의관문 } from './몰타의관문.jpeg';
 export { default as 펭귄파티 } from './펭귄파티.jpeg';
 export { default as 아줄 } from './아줄.jpeg';
+export { default as 카르카손 } from './카르카손.jpeg';
+export { default as 위즈스톤킹스크라운 } from './위즈스톤킹스크라운.jpeg';
+export { default as 위즈스톤나인나이츠 } from './위즈스톤나인나이츠.jpeg';
+export { default as 위즈스톤그레이트킹덤 } from './위즈스톤그레이트킹덤.jpeg';

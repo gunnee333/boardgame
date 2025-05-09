@@ -472,6 +472,38 @@ const initData: IBoardGame[] = [
     genre: ['전략', '추상'],
     isBuy: false,
   },
+  {
+    name: '카르카손',
+    img: Images.카르카손,
+    player: [2, 5],
+    playTime: [35],
+    genre: ['패밀리', '전략', '타일배치'],
+    isBuy: false,
+  },
+  {
+    name: '위즈스톤 킹스크라운',
+    img: Images.위즈스톤킹스크라운,
+    player: [2],
+    playTime: [20],
+    genre: ['전략', '추상'],
+    isBuy: false,
+  },
+  {
+    name: '위즈스톤 나인 나이츠',
+    img: Images.위즈스톤나인나이츠,
+    player: [2],
+    playTime: [20],
+    genre: ['전략', '추상'],
+    isBuy: false,
+  },
+  {
+    name: '위즈스톤 그레이트 킹덤',
+    img: Images.위즈스톤그레이트킹덤,
+    player: [2],
+    playTime: [20],
+    genre: ['전략', '추상'],
+    isBuy: false,
+  },
 ];
 
 export default initData;
