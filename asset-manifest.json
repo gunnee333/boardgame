@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/boardgame/static/css/main.c7556c51.css",
-    "main.js": "/boardgame/static/js/main.c1a8b4f0.js",
+    "main.js": "/boardgame/static/js/main.8e484947.js",
     "static/js/453.77f57d60.chunk.js": "/boardgame/static/js/453.77f57d60.chunk.js",
     "static/media/머핀타임.jpeg": "/boardgame/static/media/머핀타임.c66105fabbdf6ecb77a7.jpeg",
     "static/media/요트다이스.jpg": "/boardgame/static/media/요트다이스.4afac0b35a57a1968241.jpg",
@@ -38,9 +38,13 @@
     "static/media/컬러레또.jpeg": "/boardgame/static/media/컬러레또.649ac769ad137325458c.jpeg",
     "static/media/보난자.jpeg": "/boardgame/static/media/보난자.1ab4211b64fe8f4d196d.jpeg",
     "static/media/별빛커피.jpeg": "/boardgame/static/media/별빛커피.3b8cbf2cbc3ad43766d3.jpeg",
+    "static/media/위즈스톤나인나이츠.jpeg": "/boardgame/static/media/위즈스톤나인나이츠.cda2e9b832134532c3af.jpeg",
+    "static/media/위즈스톤킹스크라운.jpeg": "/boardgame/static/media/위즈스톤킹스크라운.20de51a361f3bbe83cd2.jpeg",
+    "static/media/위즈스톤그레이트킹덤.jpeg": "/boardgame/static/media/위즈스톤그레이트킹덤.b619e3bb01da217159e0.jpeg",
     "static/media/참새작.jpeg": "/boardgame/static/media/참새작.6b708694cf11998d7489.jpeg",
     "static/media/꼬치의달인.jpeg": "/boardgame/static/media/꼬치의달인.cb8434f2d7e493d8d874.jpeg",
     "static/media/독수리눈치싸움.jpeg": "/boardgame/static/media/독수리눈치싸움.f37cadc3209c54c5e5ce.jpeg",
+    "static/media/카르카손.jpeg": "/boardgame/static/media/카르카손.a50574b5d2d0d21c54f7.jpeg",
     "static/media/타코햇케익기프트피자.jpeg": "/boardgame/static/media/타코햇케익기프트피자.3bf25b7b891a59a4ba6a.jpeg",
     "static/media/모노폴리.jpeg": "/boardgame/static/media/모노폴리.fde21188f7c056fbf9ae.jpeg",
     "static/media/바퀴벌레포커.jpeg": "/boardgame/static/media/바퀴벌레포커.74aa1cd9bde03f808e4a.jpeg",
@@ -63,11 +67,11 @@
     "index.html": "/boardgame/index.html",
     "static/media/arrow.svg": "/boardgame/static/media/arrow.a874df8fe389304f1a181e1636630436.svg",
     "main.c7556c51.css.map": "/boardgame/static/css/main.c7556c51.css.map",
-    "main.c1a8b4f0.js.map": "/boardgame/static/js/main.c1a8b4f0.js.map",
+    "main.8e484947.js.map": "/boardgame/static/js/main.8e484947.js.map",
     "453.77f57d60.chunk.js.map": "/boardgame/static/js/453.77f57d60.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7556c51.css",
-    "static/js/main.c1a8b4f0.js"
+    "static/js/main.8e484947.js"
   ]
 }
