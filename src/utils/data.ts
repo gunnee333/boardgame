@@ -404,7 +404,6 @@ const initData: IBoardGame[] = [
     img: Images.펭귄파티,
     player: [2, 6],
     playTime: [30],
-    plus: ['도시와 기사', '항해사', '탐험과와 해적', '상인과 야만인'],
     genre: ['패밀리', '카드'],
     isBuy: true,
   },
