@@ -1,12 +1,16 @@
 {
   "files": {
     "main.css": "/boardgame/static/css/main.c7556c51.css",
-    "main.js": "/boardgame/static/js/main.eee078af.js",
+    "main.js": "/boardgame/static/js/main.81445289.js",
     "static/js/453.77f57d60.chunk.js": "/boardgame/static/js/453.77f57d60.chunk.js",
+    "static/media/블랭캣.jpg": "/boardgame/static/media/블랭캣.d55376d518160d5a595b.jpg",
+    "static/media/오비토.jpg": "/boardgame/static/media/오비토.ecbcdc8c3f2212d9b463.jpg",
     "static/media/머핀타임.jpeg": "/boardgame/static/media/머핀타임.c66105fabbdf6ecb77a7.jpeg",
     "static/media/요트다이스.jpg": "/boardgame/static/media/요트다이스.4afac0b35a57a1968241.jpg",
     "static/media/아줄.jpeg": "/boardgame/static/media/아줄.7861ee018c5811600f6a.jpeg",
     "static/media/초밥왕.png": "/boardgame/static/media/초밥왕.73483ce010fb4028e1f1.png",
+    "static/media/트리글.png": "/boardgame/static/media/트리글.055e72cfdd3ad005fa3e.png",
+    "static/media/더마인드.png": "/boardgame/static/media/더마인드.afcd12f7708b560a04d6.png",
     "static/media/퍼레이드.jpeg": "/boardgame/static/media/퍼레이드.9fbb982e45e331af7911.jpeg",
     "static/media/도망자.jpeg": "/boardgame/static/media/도망자.d38e57bf29911c0a05b4.jpeg",
     "static/media/티켓투라이드_유럽.jpeg": "/boardgame/static/media/티켓투라이드_유럽.731d7fd0ec44f9c08305.jpeg",
@@ -30,6 +34,7 @@
     "static/media/티츄.jpeg": "/boardgame/static/media/티츄.71cef54d01862624ef55.jpeg",
     "static/media/스플렌더.jpeg": "/boardgame/static/media/스플렌더.1d8ada03d8c27f94e5da.jpeg",
     "static/media/뱅.jpeg": "/boardgame/static/media/뱅.87c3bcfe819b9ce0b10c.jpeg",
+    "static/media/우봉고3D.jpg": "/boardgame/static/media/우봉고3D.83ba184cff05a69edd27.jpg",
     "static/media/라스베가스.jpeg": "/boardgame/static/media/라스베가스.350457921888567e7401.jpeg",
     "static/media/엘리베이터앞에서.jpeg": "/boardgame/static/media/엘리베이터앞에서.355bc9813e438b8b26d3.jpeg",
     "static/media/테라포밍마스.jpeg": "/boardgame/static/media/테라포밍마스.27fadf43268c6338b05d.jpeg",
@@ -67,11 +72,11 @@
     "index.html": "/boardgame/index.html",
     "static/media/arrow.svg": "/boardgame/static/media/arrow.a874df8fe389304f1a181e1636630436.svg",
     "main.c7556c51.css.map": "/boardgame/static/css/main.c7556c51.css.map",
-    "main.eee078af.js.map": "/boardgame/static/js/main.eee078af.js.map",
+    "main.81445289.js.map": "/boardgame/static/js/main.81445289.js.map",
     "453.77f57d60.chunk.js.map": "/boardgame/static/js/453.77f57d60.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7556c51.css",
-    "static/js/main.eee078af.js"
+    "static/js/main.81445289.js"
   ]
 }
