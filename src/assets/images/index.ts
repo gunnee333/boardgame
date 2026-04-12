@@ -60,3 +60,8 @@ export { default as 카르카손 } from './카르카손.jpeg';
 export { default as 위즈스톤킹스크라운 } from './위즈스톤킹스크라운.jpeg';
 export { default as 위즈스톤나인나이츠 } from './위즈스톤나인나이츠.jpeg';
 export { default as 위즈스톤그레이트킹덤 } from './위즈스톤그레이트킹덤.jpeg';
+export { default as 우봉고3D } from './우봉고3D.jpg';
+export { default as 더마인드 } from './더마인드.png';
+export { default as 블랭캣 } from './블랭캣.jpg';
+export { default as 트리글 } from './트리글.png';
+export { default as 오비토 } from './오비토.jpg';
