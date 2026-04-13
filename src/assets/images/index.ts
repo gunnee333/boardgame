@@ -65,3 +65,5 @@ export { default as 더마인드 } from './더마인드.png';
 export { default as 블랭캣 } from './블랭캣.jpg';
 export { default as 트리글 } from './트리글.png';
 export { default as 오비토 } from './오비토.jpg';
+export { default as 숲속의음악대 } from './숲속의음악대.jpg';
+export { default as 촵촵다이스 } from './촵촵다이스.jpg';

@@ -440,6 +440,22 @@ const initData: IBoardGame[] = [
     isBuy: true,
   },
   {
+    name: '숲속의 음악대',
+    img: Images.숲속의음악대,
+    player: [3, 6],
+    playTime: [20],
+    genre: ['패밀리', '협력'],
+    isBuy: true,
+  },
+  {
+    name: '촵촵 다이스',
+    img: Images.촵촵다이스,
+    player: [1, 4],
+    playTime: [30],
+    genre: ['주사위', '파티'],
+    isBuy: true,
+  },
+  {
     name: '오비토',
     img: Images.오비토,
     player: [2],
