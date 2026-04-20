@@ -17,6 +17,7 @@ body,
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 8px;
+  border-bottom: 1px solid #cecece;
 }
 
 .wrap .searchContainer .searchItem {
@@ -96,6 +97,11 @@ body,
   align-items: center;
   justify-content: center;
 }
+.wrap .searchContainer .searchItem .radioContainer .radioBox span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .wrap .searchContainer .searchItem .radioContainer .radioBox.checked {
   border-color: #7bff00;
@@ -104,14 +110,22 @@ body,
   font-weight: 700;
 }
 
+.wrap .scrollContainer {
+  overflow: auto;
+  padding: 0 8px 24px;
+}
+
+.wrap .scrollContainer .totalCnt {
+  font-size: 12px;
+  padding-bottom: 4px;
+}
+
 .wrap .listContainer {
   display: flex;
   gap: 60px 30px;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  overflow: auto;
-  padding: 24px 8px;
 }
 
 .wrap .listContainer .item {

@@ -58,7 +58,7 @@ function App() {
                     }
                   }}
                 >
-                  {index + 1}명
+                  <span>{index + 1}명</span>
                 </div>
               );
             })}
@@ -101,50 +101,53 @@ function App() {
                     }
                   }}
                 >
-                  {genre}
+                  <span>{genre}</span>
                 </div>
               );
             })}
           </div>
         </div>
       </div>
-      <div ref={scrollRef} className="listContainer">
-        {listData.map((item) => {
-          return (
-            <div className="item" key={_.uniqueId()}>
-              <div className="imgContainer">
-                {!!item.img && <img src={item.img} />}
-              </div>
-              <div className="textContainer">
-                <h3>{item.name}</h3>
-                <div className="textRow">
-                  <span>
-                    {formatPlayText({ array: item.player, tailText: '명' })}
-                  </span>
-                  <span>
-                    {formatPlayText({ array: item.playTime, tailText: '분' })}
-                  </span>
+      <div ref={scrollRef} className="scrollContainer">
+        <div className="totalCnt">총 {listData.length}개</div>
+        <div className="listContainer">
+          {listData.map((item) => {
+            return (
+              <div className="item" key={_.uniqueId()}>
+                <div className="imgContainer">
+                  {!!item.img && <img src={item.img} />}
                 </div>
-                {(item.genre || []).length > 0 && (
+                <div className="textContainer">
+                  <h3>{item.name}</h3>
                   <div className="textRow">
-                    <h4>장르</h4>
-                    <div>{(item.genre || []).join(', ')}</div>
+                    <span>
+                      {formatPlayText({ array: item.player, tailText: '명' })}
+                    </span>
+                    <span>
+                      {formatPlayText({ array: item.playTime, tailText: '분' })}
+                    </span>
                   </div>
-                )}
-                {(item.plus || []).length > 0 && (
-                  <div className="textRow">
-                    <h4>확장판</h4>
-                    <ul>
-                      {(item.plus || []).map((plusItem, j) => (
-                        <li key={j}>{plusItem}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+                  {(item.genre || []).length > 0 && (
+                    <div className="textRow">
+                      <h4>장르</h4>
+                      <div>{(item.genre || []).join(', ')}</div>
+                    </div>
+                  )}
+                  {(item.plus || []).length > 0 && (
+                    <div className="textRow">
+                      <h4>확장판</h4>
+                      <ul>
+                        {(item.plus || []).map((plusItem, j) => (
+                          <li key={j}>{plusItem}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );
