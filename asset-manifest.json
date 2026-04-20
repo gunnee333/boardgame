@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/boardgame/static/css/main.c7556c51.css",
-    "main.js": "/boardgame/static/js/main.79093333.js",
+    "main.css": "/boardgame/static/css/main.6173ec25.css",
+    "main.js": "/boardgame/static/js/main.831a0712.js",
     "static/js/453.77f57d60.chunk.js": "/boardgame/static/js/453.77f57d60.chunk.js",
     "static/media/블랭캣.jpg": "/boardgame/static/media/블랭캣.d55376d518160d5a595b.jpg",
     "static/media/오비토.jpg": "/boardgame/static/media/오비토.ecbcdc8c3f2212d9b463.jpg",
@@ -73,12 +73,12 @@
     "static/media/달빛아래에서수를.jpeg": "/boardgame/static/media/달빛아래에서수를.ecf57d94f97801a74468.jpeg",
     "index.html": "/boardgame/index.html",
     "static/media/arrow.svg": "/boardgame/static/media/arrow.a874df8fe389304f1a181e1636630436.svg",
-    "main.c7556c51.css.map": "/boardgame/static/css/main.c7556c51.css.map",
-    "main.79093333.js.map": "/boardgame/static/js/main.79093333.js.map",
+    "main.6173ec25.css.map": "/boardgame/static/css/main.6173ec25.css.map",
+    "main.831a0712.js.map": "/boardgame/static/js/main.831a0712.js.map",
     "453.77f57d60.chunk.js.map": "/boardgame/static/js/453.77f57d60.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7556c51.css",
-    "static/js/main.79093333.js"
+    "static/css/main.6173ec25.css",
+    "static/js/main.831a0712.js"
   ]
 }
